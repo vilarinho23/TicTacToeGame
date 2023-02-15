@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>TicTacToe byDV</title>
+</head>
+<body>
+    <p id="title">Tic.Tac.Toe</p>
+    <div id="game">
+        <div id="square1" class="squares" onclick="insertPlay(this)"></div>
+        <div id="square2" class="squares" onclick="insertPlay(this)"></div>
+        <div id="square3" class="squares" onclick="insertPlay(this)"></div>
+        <div id="square4" class="squares" onclick="insertPlay(this)"></div>
+        <div id="square5" class="squares" onclick="insertPlay(this)"></div>
+        <div id="square6" class="squares" onclick="insertPlay(this)"></div>
+        <div id="square7" class="squares" onclick="insertPlay(this)"></div>
+        <div id="square8" class="squares" onclick="insertPlay(this)"></div>
+        <div id="square9" class="squares" onclick="insertPlay(this)"></div>
+        <div id="borders">
+            <div class="borders_containers">
+                <div class="vertical border"></div>
+                <div class="vertical border"></div>
+            </div>
+            <div class="borders_containers">
+                <div class="horizontal border"></div>
+                <div class="horizontal border"></div>
+            </div>
+        </div>
+    </div>
+    <div id="winnercontainer">
+        <div id="winner"></div>
+    </div>
+    <div id="button" onclick="reset()" hidden>
+        <i class="material-icons" style="font-size:30px; padding: 4px; font-weight: 700;">restart_alt</i>
+        <p>RESET</p>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
